@@ -17,7 +17,7 @@ version: "3.7"
 services:
   exporter:
     container_name: exporter
-    image: ghcr.io/fwartner/mqtt-exporter:main
+    image: ghcr.io/fwartner/mqtt-exporter:latest
     ports:
       - 3000:3000
     environment:
