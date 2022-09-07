@@ -29,6 +29,7 @@ function getStream(data) {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.write(JSON.stringify(data));
         res.end();
+        next();
     });
 
     app.listen(port, () => {
