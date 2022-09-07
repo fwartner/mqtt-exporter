@@ -1,0 +1,18 @@
+{
+    "name": "mqtt-exporter",
+    "version": "1.0.0",
+    "description": "MQTT Exporter to JSON",
+    "main": "src",
+    "scripts": {
+        "start": "node .",
+        "test": "jest"
+    },
+    "author": "Florian Wartner <florian@wartner.io>",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.0.2",
+        "esm": "^3.2.25",
+        "express": "^4.18.1",
+        "mqtt": "^4.3.7"
+    }
+}
