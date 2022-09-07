@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  exporter:
+    container_name: exporter
+    image: ghcr.io/fwartner/mqtt-exporter:main
+    ports:
+      - 3000:3000
+    environment:
+      MQTT_HOST: my.mqtt-host.tld
+      MQTT_PORT: 1883
+      MQTT_USERNAME: mqtt_username
+      MQTT_PASSWORD: mqtt_password
+      MQTT_TOPIC: "zigbee2mqtt/bridge/devices"
+      #MQTT_CLIENT_ID: // Optional
+    restart: always
